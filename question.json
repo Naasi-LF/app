@@ -1,0 +1,52 @@
+{
+    "1": {
+        "question": "What is the keyword used to declare functions in Python?",
+        "options": ["function", "def", "declare", "func"],
+        "answer": "def"
+    },
+    "2": {
+        "question": "Which of the following is a built-in data structure in Python?",
+        "options": ["List", "Array", "LinkedList", "Tree"],
+        "answer": "List"
+    },
+    "3": {
+        "question": "What is the output of print(2 ** 3)?",
+        "options": ["6", "8", "9", "None"],
+        "answer": "8"
+    },
+    "4": {
+        "question": "Which of the following keywords is used to create a class in Python?",
+        "options": ["class", "define", "function", "method"],
+        "answer": "class"
+    },
+    "5": {
+        "question": "Which module in Python is used for regular expressions?",
+        "options": ["re", "regex", "pyregex", "match"],
+        "answer": "re"
+    },
+    "6": {
+        "question": "What is the correct way to define a dictionary in Python?",
+        "options": ["{1:'apple', 2:'banana'}", "[1:'apple', 2:'banana']", "(1:'apple', 2:'banana')", "<1:'apple', 2:'banana'>"],
+        "answer": "{1:'apple', 2:'banana'}"
+    },
+    "7": {
+        "question": "Which of the following is the correct syntax for a for loop in Python?",
+        "options": ["for i in range(5):", "for i in range 5:", "for (i=0; i<5; i++):", "for i to 5:"],
+        "answer": "for i in range(5):"
+    },
+    "8": {
+        "question": "How do you insert COMMENTS in Python code?",
+        "options": ["//This is a comment", "#This is a comment", "/*This is a comment*/", "<!--This is a comment-->"],
+        "answer": "#This is a comment"
+    },
+    "9": {
+        "question": "Which method is used to append an item to a list in Python?",
+        "options": ["append()", "add()", "push()", "insert()"],
+        "answer": "append()"
+    },
+    "10": {
+        "question": "Which of the following methods can be used to handle exceptions in Python?",
+        "options": ["try/except", "try/catch", "try/finally", "try/except/finally"],
+        "answer": "try/except"
+    }
+}

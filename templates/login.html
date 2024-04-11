@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        /* 将整个body的文本居中 */
+        body {
+            text-align: center;
+        }
+        .top-right {
+            position: absolute;
+            right: 50px;
+            top: 500px;
+            width: 500px; /* 调整为您想要的宽度 */
+        }
+        /* 设定标题样式 */
+        h1 {
+            margin-top: 50px; /* 顶部边距，可以根据需要调整 */
+            font-size: 2.5em; /* 字体大小，可以根据需要调整 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Distance Learning for Python</h1>
+    <img src="{{ url_for('static', filename='cover.png') }}" class="top-right" alt="Cover Image">
+
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        username: <input type="text" name="username"><br>
+        password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <h1>register</h1>
+    <form action="/register" method="post">
+        username: <input type="text" name="username"><br>
+        password: <input type="password" name="password"><br>
+        <input type="submit" value="register">
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

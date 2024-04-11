@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Management</title>
+    <style>
+        /* 将整个body的文本居中 */
+        body {
+            text-align: center;
+        }
+        /* 设定标题样式 */
+        h1 {
+            margin-top: 50px; /* 顶部边距，可以根据需要调整 */
+            font-size: 2.5em; /* 字体大小，可以根据需要调整 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Management</h1>
+    <a href="/logout">Logout</a>
+    <h2>Users</h2>
+    <ul>
+        {% for username, user_info in users.items() %}
+        <li>{{ username }} - Password: {{ user_info.password }} - Level: {{ user_info.level }}
+            <form action="/delete_user/{{ username }}" method="post">
+                <input type="submit" value="Delete">
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Add User</h2>
+    <form action="/add_user" method="post">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        Level: <input type="number" name="level"><br>
+        <input type="submit" value="Add User">
+    </form>
+</body>
+</html>
